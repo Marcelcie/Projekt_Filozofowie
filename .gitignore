@@ -1,0 +1,6 @@
+filozofowie
+a.out
+*.exe
+*.o
+.vscode/
+.DS_Store
