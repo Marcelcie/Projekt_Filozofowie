@@ -33,7 +33,7 @@ sudo apt-get install libncurses5-dev libncursesw5-dev
 Aby skompilować projekt, użyj poniższej komendy w terminalu (pamiętaj o linkowaniu bibliotek!):
 1. Kompilacja (pamiętaj o linkowaniu bibliotek!):
 ```bash
-g++ main.cpp -o filozofowie -lncurses -lpthread
+g++ main.cpp -o filozofowie_gui -lsfml-graphics -lsfml-window -lsfml-system -lpthread
 ```
 
 3. Uruchomienie symulacji:

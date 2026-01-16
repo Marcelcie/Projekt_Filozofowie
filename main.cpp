@@ -32,6 +32,11 @@ void* filozof(void* arg) {
         stan[id] = GLODNY;    
         pthread_mutex_unlock(&mutex_stan); 
 
+        // Wersja wymuszeniem deadlocka
+        // pthread_mutex_lock(&widelec[lewy_widelec]);
+        // usleep(100000); 
+        // pthread_mutex_lock(&widelec[prawy_widelec]);
+        //Wersja asynchroniczna brak deadlocka
         if (id % 2 == 0) {
             pthread_mutex_lock(&widelec[lewy_widelec]);
             pthread_mutex_lock(&widelec[prawy_widelec]);
