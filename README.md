@@ -44,8 +44,8 @@ Kompilacja projektu:
 
 ```bash
 g++ main.cpp -o filozofowie_gui -lsfml-graphics -lsfml-window -lsfml-system -lpthread
-Uruchomienie symulacji:
 ```
+Uruchomienie symulacji:
 
 ```bash
 ./filozofowie_gui
